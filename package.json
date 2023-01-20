@@ -4,6 +4,7 @@
    "description": "",
    "main": "index.js",
    "scripts": {
+      "start": "node package-lock.json",
       "test": "jest --collectCoverage=false"
    },
    "author": "Henry",
