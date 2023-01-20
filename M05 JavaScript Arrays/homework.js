@@ -67,8 +67,8 @@ function agregarNumeros(arrayOfNums) {
    // Suma todos los elementos y retorna el resultado.
    // Tu código:
    var suma = 0;
-   for(var i = 0; i < arrayOfNums,length; i++){
-      suma = suma + arrayOfNums[i] + 1;
+   for(var i = 0; i < arrayOfNums.length; i++){
+      suma = suma + arrayOfNums[i];
    }
    return suma;
 }
@@ -109,7 +109,7 @@ function cuentoElementos(array) {
    // Tu código:
    var contador = 0;
    for(var i = 0; i < array.length; i++){
-      if(arreglo[i] > 19){
+      if(array[i] > 18){
          contador++;
       }
    }
@@ -124,14 +124,14 @@ function diaDeLaSemana(numeroDeDia) {
    if(numeroDeDia === 1 || numeroDeDia === 7){
       return 'Es fin de semana';
    }
-   return 'Es dia Laboral';
+   return 'Es dia laboral';
 }
 
 function empiezaConNueve(num) {
    // Esta función recibe por parámetro un número.
    // Debe retornar True si el entero inicia con 9 y False en otro caso.
    // Tu código:
-   var num = n.toString();
+   var num = num.toString();
    if(num.charAt(0) === '9'){
       return true;
    }
@@ -174,7 +174,7 @@ function tablaDelSeis() {
    // Tu código:
    var resultado = [];
    for(var i = 0; i < 11; i++){
-      resultado.push(6 * 1);
+      resultado.push(6 * i);
    }
    return resultado;
 }
